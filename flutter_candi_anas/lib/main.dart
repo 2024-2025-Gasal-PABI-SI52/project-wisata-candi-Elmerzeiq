@@ -10,11 +10,23 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      title: 'Wisata Candi',
+      theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true),
       home: Scaffold(
         body: Center(
           child: Text('Hello World!'),
         ),
       ),
     );
+  }
+}
+
+class DetailScreen extends StatelessWidget {
+  const DetailScreen({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
